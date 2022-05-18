@@ -141,6 +141,15 @@ body {
     padding: 1em;
 }
 
+.body p {
+    font-size: .8rem;
+}
+
+.body h3 {
+    margin-bottom: .5em;
+    font-weight: 400;
+}
+
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -155,7 +164,7 @@ body {
     display: flex;
     background: #fff;
     width: 23em;
-    height: 12em;
+    height: 13em;
     border-radius: 0.5em;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
 }
@@ -172,7 +181,13 @@ body {
     padding: 1em;
     display: grid;
     gap: 1em;
-    justify-items: end;
+    /* justify-items: end; */
+}
+
+.card-body .icons {
+    display: flex;
+    gap: 1.4em;
+    justify-content: flex-end;
 }
 
 .side-body {
@@ -214,11 +229,6 @@ body {
     display: flex;
 }
 
-.body h3 {
-    margin-bottom: .5em;
-    font-weight: 400;
-}
-
-.body p {
-    font-size: .8rem;
+.side-boy p {
+    font-size: .9rem;
 }
