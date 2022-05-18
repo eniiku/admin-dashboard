@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-txt-color: #f1f5f9;
+    --main-color: #000; 
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.sidebar {
+    background: var(--main-color);
+    color: var(--main-txt-color);
+    grid-row: span 2;
+    display: grid;
+    gap: 2em;
+    align-content: start;
+    padding: 1em;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 3fr2em;
+}
+
+.hero-top {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 1em;
+}
+
+.hero-search {
+    display: flex;
+    align-self: center;
+    gap: 1em;
+}
+
+.hero-notifs {
+    display: flex;
+    gap: 1em;
+    justify-self: flex-end;
+    align-self: center;
+}
+
+.hero-bottom {
+    display: grid;
+    grid-template-columns:  auto auto;
+    align-items: center;
+}
+
+.hero-user  {
+    display: flex;
+}
+
+.hero-button {
+    display: flex;
+    gap: 1em;
+    justify-content: end;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background: #f1f5f9;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.card {
+    display: flex;
+    background: #fff;
+    width: 23em;
+    height: 12em;
+    border-radius: 0.5em;
+}
+
+.card-design {
+    width: 0.5em;
+    background: var(--main-color);
+}
+
+.side-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+}
+
+.side-body .announce-info {
+    background: #fff;
+    border-radius: 0.5em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+}
+
+.announce-info p {
+    border-bottom: 1px solid #ddd;
+}
+
+.side-body .trending-profiles {
+    background: #fff;
+    border-radius: 0.5em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+}
+
+.profile {
+    display: flex;
+}
