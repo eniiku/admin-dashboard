@@ -15,6 +15,7 @@ html {
 
 body {
     height: 100%;
+    width: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -31,20 +32,20 @@ body {
     display: grid;
     gap: 2em;
     align-content: start;
-    padding: 1em;
 }
 
 .sidebar a {
     display: flex;
     font-size: 1rem;
     gap: 1em;
-    margin-bottom: 1em;
+    padding: .9em;
     align-items: center;
 }
 
 .sidebar .dashboard {
     display: flex;
     gap: 1em;
+    padding: .5em;
     font-size: 1.4em;
     align-items: center;
 }
@@ -86,6 +87,10 @@ body {
     align-items: center;
 }
 
+.hero-notifs svg {
+    cursor: pointer;
+}
+
 .hero-bottom {
     display: grid;
     grid-template-columns:  auto auto;
@@ -94,18 +99,16 @@ body {
     align-items: center;
 }
 
-/* .hero-bottom .avatar {
+.hero-bottom .avatar {
     width: 60px;
     height: 60px;
-    border: 1px solid;
-    border-radius: 50%;
-    align-self: center;
 }
 
-.hero-bottom .avatar p {
+.hero-bottom .avatar img {
     max-height: 100%;
     max-width: 100%;
-} */
+    border-radius: 50%;
+}
 
 .hero-user  {
     display: flex;
@@ -116,7 +119,6 @@ body {
 
 .hero-user-home .greeting {
     font-size: .7rem;
-    font-weight: 900;
 }
 
 .hero strong {
@@ -131,9 +133,14 @@ body {
 .hero-button button {
     background: var(--main-color);
     color: var(--main-txt-color);
+    border: none;
     padding: .3em 2em;
-    font-weight: 700;
+    font-weight: 700; 
     border-radius: 1em;
+}
+
+.hero-button button:hover {
+    cursor: pointer;
 }
 
 .body {
@@ -168,8 +175,13 @@ body {
     width: 23em;
     height: 13em;
     border-radius: 0.5em;
-    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
-}
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07),
+                0 2px 2px rgba(0, 0, 0, 0.07),
+                0 4px 4px rgba(0, 0, 0, 0.07),
+                0 8px 8px rgba(0, 0, 0, 0.07),
+                0 16px 16px rgba(0, 0, 0, 0.07),
+                0 32px 32px rgba(0, 0, 0, 0.07);
+} 
 
 .card-design {
     width: .6em;
@@ -183,7 +195,6 @@ body {
     padding: 1em;
     display: grid;
     gap: 1em;
-    /* justify-items: end; */
 }
 
 .card-body .icons {
@@ -204,7 +215,12 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0.5em;
-    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07),
+                0 2px 2px rgba(0, 0, 0, 0.07),
+                0 4px 4px rgba(0, 0, 0, 0.07),
+                0 8px 8px rgba(0, 0, 0, 0.07),
+                0 16px 16px rgba(0, 0, 0, 0.07),
+                0 32px 32px rgba(0, 0, 0, 0.07);
     padding: 1.5em;
 }
 
@@ -222,13 +238,19 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
-    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07),
+                0 2px 2px rgba(0, 0, 0, 0.07),
+                0 4px 4px rgba(0, 0, 0, 0.07),
+                0 8px 8px rgba(0, 0, 0, 0.07),
+                0 16px 16px rgba(0, 0, 0, 0.07),
+                0 32px 32px rgba(0, 0, 0, 0.07);
     padding: 1.5em;
     justify-items: start;
 }
 
 .profile {
     display: flex;
+    gap: 1em;
 }
 
 .side-boy p {
@@ -238,4 +260,15 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.avatar img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 50%;
 }
