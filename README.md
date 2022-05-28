@@ -1,3 +1,3 @@
-# admin-dashboard
+# Admin-dashboard
 
-A project to show my prowess using css Grid.
+Built using HTML and CSS. With CSS Grid as main focus
